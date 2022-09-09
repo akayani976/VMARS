@@ -5,8 +5,9 @@ class SettingsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text("Settings")),
+    return Container(
+      color: Colors.white,
+      child: const Center(child: Text("Settings")),
     );
   }
 }

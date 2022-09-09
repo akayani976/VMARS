@@ -5,8 +5,9 @@ class RecordLogsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text("Record Log")),
+    return Container(
+      color: Colors.white,
+      child: const Center(child: Text("Record Log")),
     );
   }
 }

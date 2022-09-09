@@ -1,13 +1,13 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 import 'package:intl/intl.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:vmar/AppLayout/button.dart';
 import 'package:vmar/AppLayout/getX.dart';
-import 'package:vmar/Cubits/app_cubits.dart';
+import 'package:get/get.dart';
+import 'package:vmar/views/record_logs.dart';
+import 'package:vmar/views/settings_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -177,14 +177,14 @@ class _HomePageState extends State<HomePage> {
                   Gap(AppLayout.getHeight(10)),
                   GestureDetector(
                     onTap: () {
-                      BlocProvider.of<AppCubits>(context).getRecordsLog();
+                      Get.to(const RecordLogsPage());
                     },
                     child: const AppButton(text: 'Record Log'),
                   ),
                   Gap(AppLayout.getHeight(10)),
                   GestureDetector(
                     onTap: () {
-                      BlocProvider.of<AppCubits>(context).getSettings();
+                      Get.to(const SettingsPage());
                     },
                     child: const AppButton(text: 'Settings'),
                   ),
