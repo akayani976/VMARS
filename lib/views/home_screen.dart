@@ -29,6 +29,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
+        elevation: 0,
         toolbarHeight: AppLayout.getHeight(130),
         title: Center(
           child: Column(

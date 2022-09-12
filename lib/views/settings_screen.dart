@@ -14,6 +14,7 @@ class SettingsPage extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
+        elevation: 0,
         toolbarHeight: AppLayout.getHeight(120),
         title: Center(
           child: Column(
@@ -39,15 +40,16 @@ class SettingsPage extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(left: AppLayout.getWidth(20)),
+                    padding: EdgeInsets.only(left: AppLayout.getWidth(10)),
                     height: AppLayout.getHeight(70),
                     child: GestureDetector(
                       onTap: () {
                         Get.to(const HomePage());
                       },
                       child: const Icon(
-                        Icons.arrow_back_ios,
+                        Icons.chevron_left_sharp,
                         color: Color.fromARGB(255, 150, 155, 162),
+                        size: 30,
                       ),
                     ),
                   ),
